@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="dark">
     <ion-title>
      Unviel
     </ion-title>
@@ -9,20 +9,12 @@
 
 <ion-content no-padding>
   <ion-list no-padding>
-    <ion-item *ngFor="let img of allImgs" no-padding>
-      <ion-card class="unspl-img-card" center middle>
+    <ion-item *ngFor="let img of allImgs" class="unspl-img-item" no-padding>
+      <ion-card class="unspl-img-card">
         
         <img src="{{img.src}}">
-        <ion-card-content>
-          <!--<ion-card-title>
-            Nine Inch Nails Live
-            </ion-card-title>
-            <p>
-              The most popular industrial group ever, and largely
-              responsible for bringing the music to a mass audience.
-            </p>-->
-        </ion-card-content>
-        <ion-row no-padding>
+        
+        <ion-row no-padding class="bottom-row">
           <ion-col>
             <button ion-button block clear small color="danger" icon-left (click)="setWallpaper(img.src)">
                 <ion-icon name='star'></ion-icon>

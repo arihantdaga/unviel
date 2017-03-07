@@ -2,17 +2,45 @@ page-unviel {
     .background-img-card{
 
     }
+    ion-content{
+        background-color:black !important;
+    }
+    .unspl-img-item>.item-inner{
+        padding-right:0px;
+        border: 0px none !important;
+        padding-right: 0px;
+        .label{
+            margin-right:0px;
+        }
+    }
     .unspl-img-card{
+        background:transparent;
         img{
             height:600px;
             background-color:#eee;
-            background-image: url(/assets/img/ripple.gif);
+            background-image: url("../assets/img/ripple.gif");
             background-size: 50px 50px;
             background-position: center center;
+            background-color: transparent;
+            border-bottom: 1px solid #555;
+            background-repeat:no-repeat;
         }
         .label-md{
             margin-right:0px;
         }
+        .bottom-row{
+            
+        }
+    }
+    ion-item.item.unspl-img-item{
+        background:black;
+        .item-inner{
+            border:0px none !important;
+        }
+        .item-inner{
+            border:0px none !important;
+        }
+        
     }
     
 }

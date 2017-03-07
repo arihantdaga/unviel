@@ -9,15 +9,16 @@ import { LoadingService } from '../../providers/LoadingService';
   templateUrl: 'unviel.html'
 })
 export class UnvielPage {
+  physicalScreenWidth = window.screen.width * window.devicePixelRatio;
+  physicalScreenHeight = window.screen.height * window.devicePixelRatio;
+
   allImgs:any[];
-  baseUrl = "https://unsplash.it/400/600?image=";
+  baseUrl = `https://unsplash.it/${this.physicalScreenWidth}/${this.physicalScreenHeight}?image=`;
   imgCount: Number;
   CurrentImgCount:any=0;
   TotalImgCount=1084;
   imgArray:any[]=[];
-
   
-
   constructor(public navCtrl: NavController, private platform:Platform,private Alert:AlertService,private loading:LoadingService) {
     this.allImgs=[];
     this.imgCount = 5;

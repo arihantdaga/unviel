@@ -14,3 +14,23 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.app_prim_background{
+    background-color:purple;
+    color:white;
+}
+
+ion-navbar[color="dark"]{
+    .toolbar-background{
+        background-color:#01898a !important;
+        color:white !important;
+    }
+    .toolbar-title{
+        color:white !important;
+    }
+}
+ion-tabs[color="dark"]{
+    .tabbar{
+        background-color:#01898a !important;
+        color:white !important;
+    }
+}
